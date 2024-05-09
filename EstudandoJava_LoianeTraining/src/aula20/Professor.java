@@ -1,4 +1,4 @@
-package aula18;
+package aula20;
 
 public class Professor extends Pessoa{
 
@@ -14,6 +14,11 @@ public class Professor extends Pessoa{
 
 	public double calcSalarLiqui() {
 		return 0;
+	}
+
+	@Override
+	public void imprimirNome() {
+		System.out.println("O nome deste Professor é: " + getNome());
 	}
 	
 }

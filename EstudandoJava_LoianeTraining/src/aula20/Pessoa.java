@@ -1,6 +1,6 @@
-package aula18;
+package aula20;
 
-public class Pessoa {
+public abstract class Pessoa {
 
 	private String nome;
 	private String endereco;
@@ -8,15 +8,6 @@ public class Pessoa {
 	private String cpf;
 	private String curso;
 	
-	public Pessoa() {
-		super();
-	}
-	public Pessoa(String nome, String endereco, String telefone) {
-		super();
-		this.nome = nome;
-		this.endereco = endereco;
-		this.telefone = telefone;
-	}
 	public String getNome() {
 		return nome;
 	}
@@ -47,6 +38,6 @@ public class Pessoa {
 	public void setCurso(String curso) {
 		this.curso = curso;
 	}
-	
+	public abstract void imprimirNome();
 	
 }

@@ -1,4 +1,4 @@
-package aula18;
+package aula20;
 
 public class Teste {
 
@@ -7,6 +7,8 @@ public class Teste {
 		aluno01.setNome("Felipe");
 		Professor professor01 = new Professor();
 		professor01.setNome("Luiz");
+		aluno01.imprimirNome();
+		professor01.imprimirNome();
 	}
 
 }
