@@ -1,6 +1,6 @@
-package aula26;
+package aula27;
 
-public class MultiplosCatch {
+public class SistemaDeSaida {
 
 	public static void main(String[] args) {
 
@@ -12,11 +12,16 @@ public class MultiplosCatch {
 				System.out.println(numeros[i] + " / "+ denom[i] + " = " + (numeros[i]/denom[i]));
 			}catch (ArithmeticException e1) {
 				System.out.println("Erro ao dividir por 0");
+				System.exit(0);//Ao terminar uma execucao do programa dentro do try ou catch, finally nao e executado
 			}catch(ArrayIndexOutOfBoundsException e2){
 				System.out.println("Posicão do Array Inválida");
-			}
+				System.exit(0);
+			}finally {
+				System.out.println("Essa linha é impressa sempre após o try ou o catch");
 			
 		}
 	}
+
+}
 
 }
