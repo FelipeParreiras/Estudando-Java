@@ -1,6 +1,6 @@
 package aula35;
 
-public class testeAutoUnboxing {
+public class TesteAutoUnboxing {
 
 	public static void main(String[] args) {
 
